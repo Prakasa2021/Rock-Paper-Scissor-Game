@@ -1659,7 +1659,7 @@ MonoBehaviour:
   type: 1
   currentHP: 100
   maxHP: 100
-  attack: 20
+  attackPower: 20
   overHeadText: {fileID: 1518426643}
   avatar: {fileID: 1108565602}
   nameText: {fileID: 1784770712}
@@ -2567,7 +2567,7 @@ MonoBehaviour:
   type: 0
   currentHP: 100
   maxHP: 100
-  attack: 20
+  attackPower: 20
   overHeadText: {fileID: 1476609957}
   avatar: {fileID: 95065066}
   nameText: {fileID: 265477641}
@@ -2953,7 +2953,7 @@ MonoBehaviour:
   type: 0
   currentHP: 100
   maxHP: 100
-  attack: 20
+  attackPower: 20
   overHeadText: {fileID: 1753632891}
   avatar: {fileID: 422030559}
   nameText: {fileID: 1701984448}
@@ -3929,7 +3929,7 @@ MonoBehaviour:
   type: 2
   currentHP: 100
   maxHP: 100
-  attack: 20
+  attackPower: 20
   overHeadText: {fileID: 1246792075}
   avatar: {fileID: 1955854287}
   nameText: {fileID: 1470134684}
@@ -4460,7 +4460,7 @@ MonoBehaviour:
   type: 2
   currentHP: 100
   maxHP: 100
-  attack: 20
+  attackPower: 20
   overHeadText: {fileID: 2119183939}
   avatar: {fileID: 2060671653}
   nameText: {fileID: 1079150742}
@@ -6769,7 +6769,7 @@ MonoBehaviour:
   type: 1
   currentHP: 100
   maxHP: 100
-  attack: 20
+  attackPower: 20
   overHeadText: {fileID: 945814696}
   avatar: {fileID: 21568270}
   nameText: {fileID: 2135356185}

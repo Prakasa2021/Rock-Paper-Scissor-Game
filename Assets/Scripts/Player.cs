@@ -31,11 +31,35 @@ public class Player : MonoBehaviour
 
     public void Attack()
     {
-        selectedCharacter.transform.DOMove(atkRef.position, 1f).SetEase(Ease.InExpo);
+        selectedCharacter.transform
+            .DOMove(atkRef.position, 1f);
     }
 
     public bool IsAttacking()
     {
-        return true;
+        return DOTween.IsTweening(selectedCharacter.transform);
+    }
+
+    public void TakeDamage(int damageValue)
+    {
+        selectedCharacter.ChangeHP(-damageValue);
+        var spriteRend = selectedCharacter.GetComponent<SpriteRenderer>();
+        spriteRend.DOColor(Color.red, 0.1f).SetLoops(6, LoopType.Yoyo);
+    }
+
+    public bool IsDamaging()
+    {
+        var spriteRend = selectedCharacter.GetComponent<SpriteRenderer>();
+        return DOTween.IsTweening(spriteRend);
+    }
+
+    public void Remove(Character character)
+    {
+        if(characterList.Contains(character) == false)
+            return;
+            
+        selectedCharacter.Button.interactable = false;
+        selectedCharacter.gameObject.SetActive(false);
+        characterList.Remove(character);
     }
 }
